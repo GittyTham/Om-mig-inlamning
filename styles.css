@@ -348,9 +348,9 @@ form button {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
 }
 .interest-list li {
   padding: 1.25rem 1.25rem;
@@ -382,8 +382,10 @@ form button {
   border: 0;
 }
 
+/* MOBIL */
 @media (max-width: 50em) {
-  .skill-list {
+  .skill-list,
+  .interest-list {
     grid-template-columns: 1fr;
   }
 }
